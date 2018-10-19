@@ -8,7 +8,7 @@
 * The purpose of this article
 Here I'm going to illustrate:
 
-*Using anyone of programming languages, with only two operations: string concatenation and type conversion, there is no need to use template languages, such as format in "printf" of C language, [[https://mustache.github.io/][mustache]], [[https://shopify.github.io/liquid/][liquid]], [[http://jinja.pocoo.org/][jinja2]] and etc.*
+*Using anyone of programming languages, with only two operations: string concatenation and type conversion, we have no needs to use template languages, such as format in "printf" of C language, [[https://mustache.github.io/][mustache]], [[https://shopify.github.io/liquid/][liquid]], [[http://jinja.pocoo.org/][jinja2]] and etc.*
 
 You can review the opinion in this article with template languages in web application frameworks, such as [[https://vuejs.org/][vuejs]], [[https://angular.io/][angularjs]], and [[https://reactjs.org/][reactjs]] and etc.(And reactjs do it in right ways somewhat.)
 
