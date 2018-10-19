@@ -47,7 +47,7 @@ Whereas we can make the process done using emacs lisp in this way:
 
 "int-to-string" converse the "int" type variable into string.
 
-all is direct. we don't need to parse "Hello world, my name is %s, my age is %d".
+All is direct. We don't need to parse "Hello world, my name is %s, my age is %d".
 
 ** mustache
 Using hash:
