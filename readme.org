@@ -1,0 +1,130 @@
+#+STARTUP: content inlineimages
+
+#+title: No Template Style--Why there is no need to use template languages
+#+author: kuangdash
+#+email: kuangdash@126.com
+#+date: 2018-10-18 周四
+
+* The purpose of this article
+Here I'm going to illustrate:
+
+*Using anyone of programming languages, with only two operations: string concatenation and type conversion, there is no need to use template languages, such as format in "printf" of C language, [[https://mustache.github.io/][mustache]], [[https://shopify.github.io/liquid/][liquid]], [[http://jinja.pocoo.org/][jinja2]] and etc.*
+
+You can review the opinion in this article with template languages in web application frameworks, such as [[https://vuejs.org/][vuejs]], [[https://angular.io/][angularjs]], and [[https://reactjs.org/][reactjs]] and etc.(And reactjs do it in right ways somewhat.)
+
+You can also review the opinion in this article with [[https://secure.php.net/][PHP]], [[https://www.oracle.com/technetwork/java/javaee/jsp/index.html][JSP]] and [[https://www.asp.net][ASP]].
+
+* To illustrate, Using examples
+Here I choose "emacs lisp" as the programming language to illustrate the process.
+
+** "printf" in C language
+#+BEGIN_SRC C
+int main(void)
+{
+char MyName[] = "Wang Bowen";
+int MyAge = 26;
+printf("Hello world, my name is %s, my age is %d", MyName, MyAge);
+return 0;
+}
+#+END_SRC
+
+Where the process must parse "Hello world, my name is %s, my age is %d", find "%s" and "%d", then replace these with MyName and Myage which is going to be conversed into string.
+
+Whereas we can make the process done using emacs lisp in this way:
+
+#+BEGIN_SRC elisp
+  (setq MyName "Wang Bowen"
+        MyAge  26)
+  (message
+     (concat "Hello, world, my name is "
+             MyName
+             ", my age is "
+             (int-to-string MyAge)))
+#+END_SRC
+"message" output the concatenated string into console.
+
+"concat" concatenate the strings.
+
+"int-to-string" converse the "int" type variable into string.
+
+all is direct. we don't need to parse "Hello world, my name is %s, my age is %d".
+
+** mustache
+Using hash:
+
+{
+ "MyName":"Wang Bowen",
+ "MyAge":26
+}
+
+We have to parse the string:
+
+#+BEGIN_SRC html
+Hello world, my name is {{MyName}}, my age is {{MyAge}}
+#+END_SRC
+
+Then give the result.
+
+Whereas we can make the process done using emacs lisp in this way:
+
+#+BEGIN_SRC elisp
+  (setq MyName "Wang Bowen"
+        MyAge  26)
+  (message
+     (concat "Hello, world, my name is "
+             MyName
+             ", my age is "
+             (int-to-string MyAge)))
+#+END_SRC
+
+** liquid
+The same as mustache.
+
+Whereas we can make the process done using emacs lisp in this way:
+
+#+BEGIN_SRC elisp
+  (setq MyName "Wang Bowen"
+        MyAge  26)
+  (message
+     (concat "Hello, world, my name is "
+             MyName
+             ", my age is "
+             (int-to-string MyAge)))
+#+END_SRC
+
+** jinja2
+The same as liquid.
+
+Whereas we can make the process done using emacs lisp in this way:
+
+#+BEGIN_SRC elisp
+  (setq MyName "Wang Bowen"
+        MyAge  26)
+  (message
+     (concat "Hello, world, my name is "
+             MyName
+             ", my age is "
+             (int-to-string MyAge)))
+#+END_SRC
+
+* If you want logic operation and iteration, just use what the programming language itself have.
+* Generally Speaking
+When we input the data, and wants the output as text file, we can directly create the process using programming languages:
+
+#+CAPTION: the principle
+[[file:RDS.png]]
+
+Where the "DS" stands for "Data Structure" and the "RDS" stands for "Runnable Data Structure". Source code in one programming languages can be regarded as "Runnable Data structure".
+
+There is no need to create a new template languages to make the process complicated. And if we do it in this way, we will omit the procedure parsing template languages so that *the process speeds up*, what's more, *it can be easier to make the process in parallel* (yes, multiple string concatenation can be done in parallel).
+
+* Thanks To & Copyright
+The thought comes from one article [[https://zhuanlan.zhihu.com/p/35496877][理论上最好的语言: 封装定则篇]] in the project [[https://zhuanlan.zhihu.com/c_156166721][OOWA]].
+
+I choose [[https://creativecommons.org/][creativecommons]] as the copyright:
+
+[[https://creativecommons.org/licenses/by-sa/3.0/][CC BY-SA 3.0]]
+
+If you like the opinion in this article, please star this article! and propagate it with your collaborators!
+
+
