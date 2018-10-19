@@ -109,7 +109,7 @@ Whereas we can make the process done using emacs lisp in this way:
 
 * If you want logic operation and iteration, just use what the programming language itself have.
 * Generally Speaking
-When we input the data, and wants the output as text file, we can directly create the process using programming languages:
+When we input the data, and want the output as text file, we can directly create the process using programming languages:
 
 #+CAPTION: the principle
 [[file:RDS.png]]
