@@ -41,13 +41,13 @@ Whereas we can make the process done using emacs lisp in this way:
              ", my age is "
              (int-to-string MyAge)))
 #+END_SRC
-"message" output the concatenated string into console.
+"message" outputs the concatenated string into console.
 
-"concat" concatenate the strings.
+"concat" concatenates the strings.
 
-"int-to-string" converse the "int" type variable into string.
+"int-to-string" converses the "int" type variable into string.
 
-All is direct. We don't need to parse "Hello world, my name is %s, my age is %d".
+All are direct. We don't need to parse "Hello world, my name is %s, my age is %d".
 
 ** mustache
 Using hash:
