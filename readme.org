@@ -10,7 +10,7 @@ Here I'm going to illustrate:
 
 *Using anyone of programming languages, with only two operations: string concatenation and type conversion, we have no needs to use template languages*, such as format in "printf" of C language, [[https://mustache.github.io/][mustache]], [[https://shopify.github.io/liquid/][liquid]], [[http://jinja.pocoo.org/][jinja2]] and etc.
 
-You can review the opinion in this article with template languages in web application frameworks, such as [[https://vuejs.org/][vuejs]], [[https://angular.io/][angularjs]], and [[https://reactjs.org/][reactjs]] and etc.(And reactjs do it in right ways somewhat.)
+You can review the opinion in this article with template languages in web application frameworks, such as [[https://vuejs.org/][vuejs]], [[https://angular.io/][angularjs]], and [[https://reactjs.org/][reactjs]] and etc.(And reactjs somewhat do it in right ways.)
 
 You can also review the opinion in this article with [[https://secure.php.net/][PHP]], [[https://www.oracle.com/technetwork/java/javaee/jsp/index.html][JSP]] and [[https://www.asp.net][ASP]].
 
@@ -116,7 +116,7 @@ When we input the data, and want the output as text file, we can directly create
 
 Where the "DS" stands for "Data Structure" and the "RDS" stands for "Runnable Data Structure". Source code in one programming languages can be regarded as "Runnable Data structure".
 
-There is no need to create a new template languages to make the process complicated. And if we do it in this way, we will omit the procedure parsing template languages so that *the process speeds up*, what's more, *it can be easier to make the process in parallel* (yes, multiple string concatenation can be done in parallel).
+There is no need to create a new template languages to make the process complicated. We can skip the procedure parsing template languages so that *the process speeds up*, what's more, *it can be easier to make the process in parallel* (yes, multiple strings concatenation can be done in parallel).
 
 * Thanks To & Copyright
 The thought comes from one article [[https://zhuanlan.zhihu.com/p/35496877][理论上最好的语言: 封装定则篇]] in the project [[https://zhuanlan.zhihu.com/c_156166721][OOWA]].
