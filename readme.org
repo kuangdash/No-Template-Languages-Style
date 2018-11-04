@@ -1,6 +1,6 @@
 #+STARTUP: content inlineimages
 
-#+title: No Template Style--Why there is no need to use template languages
+#+title: No Template Languages Style--Why there is no need to use template languages
 #+author: kuangdash
 #+email: kuangdash@126.com
 #+date: 2018-10-18 周四
