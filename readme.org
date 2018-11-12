@@ -116,7 +116,7 @@ When we input the data, and want the output as text file, we can directly create
 
 Where the "DS" stands for "Data Structure" and the "RDS" stands for "Runnable Data Structure". Source code in one programming languages can be regarded as "Runnable Data Structure".
 
-When we want to input some data structure such as "my name" and "my age" and get the output which have stationary format, we can directly use one programming language to create "Runnable Data Structure" in order to deal with the process.
+When we want to input some data structure such as "my name" and "my age" and get the output which has stationary format, we can directly use one programming language to create "Runnable Data Structure" in order to deal with the process.
 
 There is no need to create a new template languages to make the process complicated. We can skip the procedure parsing template languages so that *the process speeds up*, what's more, *it can be easier to make the process in parallel* (yes, multiple strings concatenation can be done in parallel).
 
